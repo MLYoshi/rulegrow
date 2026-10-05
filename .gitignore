@@ -1,0 +1,7 @@
+.env
+prd.md
+.venv/
+__pycache__/
+*.egg-info/
+.rulegrow/
+.DS_Store

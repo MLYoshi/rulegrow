@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rulegrow"
+version = "0.1.0"
+description = "An AI that rewrites its own dialogue rules as auditable Python code."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "RuleGrow contributors" }]
+dependencies = []
+
+[project.scripts]
+rulegrow = "rulegrow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rulegrow = ["prompts/*.txt"]
